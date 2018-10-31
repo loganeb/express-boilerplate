@@ -9,7 +9,7 @@ module.exports = app => {
     //GET request to /api/
     .get((req, res) => {
         Example.find({}, (err, examples) => {
-            res.json(books)
+            res.json(examples)
         })
     })
     //POST request to /api/
