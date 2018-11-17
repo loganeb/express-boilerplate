@@ -10,7 +10,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(logger('dev'));
 
-console.log(config.db);
 mongoose.connect(config.db, {useNewUrlParser: true});
 const db = mongoose.connection;
 db.on('connected', () => {
